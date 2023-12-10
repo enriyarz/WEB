@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*--------------------------------------Modo Claro-----------------------------------------*/
+
+
+/*Configuracion de la pagina web para cuando el navegador esta en modo claro*/
+@media (prefers-color-scheme: light) {
+    /*dar formato a toda la pagina*/
+    * {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    body {
+        background-color: #f9f9fb;
+    }
+    /*color del fondo de menu*/
+    #menu-ul {
+        background-color: #f9f9fb;
+    }
+
+    /*color de la letra del menu*/
+    .menu-li a {
+        color: #2b2a33;
+    }
+    
+    /*tras acercar el raton al menu el color del fondo del menu*/
+    .menu-li:hover {
+        background-color: #2b2a33;
+    }
+
+    /*configuracion del menu cuando pasa el cursor por encima*/
+    .menu-content a:hover {
+        color: #f9f9f9;
+        cursor: pointer;
+    }
+
+    /*el boton es un div y para poder hacerlo bonito se usa el color del fondo de pantalla*/
+    .dropbtn {
+        background-color: #f9f9f9;
+    }
+    
+    /*color del icono de las lineas del menu desplegable*/
+    #menu-ico {
+        background-color: #2b2a33;
+    }    
+
+    #form {
+        background-color: #efefef
+    }
+
+    
+    #textua{
+        background-color: #3b3b3b;
+    }   
+
+    #komentarioak {
+        background-color: #3b3b3b;
+        color: #f1f1f1;
+    }
+}
+
+/*--------------------------------------Final Modo Claro-----------------------------------------*/
+
+
+
+
+/*--------------------------------------Modo Oscuro-----------------------------------------*/
+
+
+/*Configuracion de la pagina para cuando el navegador esta en modo oscuro*/
+@media (prefers-color-scheme: dark) {
+    /*dar formato a toda la pagina*/
+    * {
+        color: #f9f9f9;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    body {
+        background-color: #2b2a33;
+    }
+    
+    /*color del fondo de menu*/
+    #menu-ul {
+        background-color: #2b2a33;
+    }
+
+    /*color de la letra del menu*/
+    .menu-li a {
+        color: #ffffff;
+    }
+    
+    /*tras acercar el raton al menu el color del fondo del menu*/
+    .menu-li:hover {
+        background-color: #ffffff;
+    }
+
+    /*configuracion del menu cuando pasa el cursor por encima*/
+    .menu-content a:hover {
+        color: #2b2a33;
+        cursor: pointer;
+    }
+
+    /*el boton es un div y para poder hacerlo bonito se usa el color del fondo de pantalla*/
+    .dropbtn {
+        background-color: #2b2a33;
+    }
+
+    /*color del icono de las lineas del menu desplegable*/
+    #menu-ico {
+        background-color: #f9f9f9;
+    }
+
+    #form {
+        background-color: #2b2a33;
+    }
+
+    #textua{
+        background-color: #ffffff;
+    }   
+
+    #komentarioak {
+        background-color: #ffffff;
+        color: #2b2a33;
+    }
+}
+
+/*--------------------------------------Final Modo Oscuro-----------------------------------------*/
+
+
+
+
+
+
+/*---------------------------------------Menu-------------------------------------*/
+
+/*para desactivar el boton del menu desplegable*/
+button.dropbtn {
+    display: none;
+}
+
+/*configuracion ul para el menu quitar tipo de stylo del menu puntos o numeros*/
+#menu-ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+/*para crear un bloque de texto con unos espacios con el padding y el text decoration none para quitar los colores de los links*/
+.menu-li a {
+    display: block;
+    text-decoration: none;
+    padding: 12px 16px;
+}
+
+/*para que el menu se quede flotando hacia la derecha*/
+.menu-li{
+    float: left;
+}
+
+/*-----------------------------------Fin del Menu----------------------------------*/
+
+#kontaktua_fondo {
+    margin-top: 0;
+    background-image: url(../IMG/kontaktua.png);
+    background-attachment:fixed ;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
+}
+
+#kontaktua_fondo_color {
+    align-items: center; /*para centrar el contenido en altura*/
+    justify-content: center;/*para centrar el contenido en anchura*/
+    display: flex; /*lo utilizo para poder modificar la ubicacion del contenido del div facilmente*/
+    min-width: 100%;
+    min-height: 400px;
+    background-color:rgba(0,0,0,0.6);
+}
+
+#kontaktua{
+    color: #ffffff;
+    text-align: center;
+}
+/*---------------------Formuuuuuuuuuuuuuulaaaaaaaaaaaariooooooooo------------------*/
+
+
+#form{
+    padding: 1vw;
+    margin: auto;
+    min-width: 60%;
+    max-width: 60%;
+}
+/*box shadow para dar una pequeña sombra*/
+/*border radius para dar una ligera curbatura a las esquinas*/
+/*padding para dejar un pequeño espacio*/
+/*marign auto para centrar el div*/
+/*width max content para limitar el div al tamaño del texto*/
+
+form {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*tipo de letra del formulario*/
+
+#textua{
+    min-width: 100%;
+    min-height: 30px;
+    border: 0px;
+    margin-top: 2px;
+    border-radius: 3px;
+}
+/*Tamaño de los recuadros*/
+
+#komentarioak {
+    min-width: 100%;
+    min-height: 200px;
+
+}
+/*tamaño de la casilla de los comentarios*/
+
+#submit {
+    background-color: #05c46b;
+    min-width: 100%;
+    min-height: 25px;
+    text-align: center;
+    border-color: #05c46b;
+}
+/*estilo y color del boton de enviar informacion*/
+
+
+/*---------------------Formuuuuuuuuuuuuuulaaaaaaaaaaaariooooooooo-FIN-------------*/
+
+
+
+/*-------------------------------FOOOOOTEEEEERRRRRRRRR-----------------------------*/
+#footer{
+    margin-top: 100px;
+    background-color: #685563;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#footer img {
+    max-width: 45px;
+    min-width: 45px;
+}
+
+#tolosa-footer {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+#linkak {
+    margin-top: 20px;
+}
+
+/*-----------------------------FIN-FOOOTEEEERRR-------------------------------------*/
+
+
+
+
+
+
+
+/*configuracion de la pagina web para cuando el dispositivo tiene menos de 768px a lo ancho en la pantalla*/
+@media (max-width: 768px){
+    
+
+
+    /*----------------------------------MENU---------------------------------------------------------*/
+
+
+    /*como en la parte superior del css tenemos escrito que el boton este oculto ahora tenemos que especificar que este a la vista*/
+    button.dropbtn {
+        display: inline;
+    }
+
+    /*configuracion de los divs utilizados para crear las lineas del icono*/
+    #menu-ico {
+        width: 30px;
+        height: 3px;
+        margin: 6px;
+    }
+
+    /*configuracion del boton sus padding para dar el tamaño a el mismo y el border none para quitar el contorno*/
+    .dropbtn {
+        padding: 12px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    /* Style the dropdown container */
+    .dropdown {
+        position: relative;
+        display: block;
+    }
+    
+    /* Style the dropdown content (hidden by default) */
+    .menu-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: max-content;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+
+    /* Change color of links on hover */
+    .menu-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .menu-li {
+        float: none;
+    }
+
+    .menu-li a {
+        
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    /* Show the dropdown content when the button is hovered over */
+    .dropdown:hover .menu-content {
+        display: block;
+    }
+    /*-----------------------------------FINAL-MENU-----------------------------------------*/
+
+}
